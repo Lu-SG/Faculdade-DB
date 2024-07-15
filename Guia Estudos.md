@@ -3,6 +3,6 @@
 ### Bibliografia
 | Capa | Título | Autor |
 | ----------- | ----------- | ----------- |
-|  |  Algoritmos Teoria e Prática |  Thomas Corden |
+|  ![alt text](Algoritmos - Teoria e Prática.svg)  |  Algoritmos Teoria e Prática |  Thomas Corden |
 
 ### Conteúdos 
