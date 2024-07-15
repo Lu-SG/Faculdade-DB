@@ -1,4 +1,4 @@
-#O que estudar?
-##Algoritmos
-###Bibliografia
-###Conteúdos 
+# O que estudar?
+## Algoritmos
+### Bibliografia
+### Conteúdos 
