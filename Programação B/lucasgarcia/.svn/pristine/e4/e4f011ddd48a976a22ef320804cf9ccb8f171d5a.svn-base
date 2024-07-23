@@ -1,0 +1,45 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package PDV;
+
+/**
+ *
+ * @author LucasSilvaGarcia
+ */
+public class Financeiro {
+
+    public Financeiro() {
+    }
+    
+    private float Saldo;
+    private float Receita;
+    private float Despesas;
+    
+    public void getSaldo(float Saldo) {
+        this.Saldo = Saldo;
+    }
+
+    public void getReceita(float Receita) {
+        this.Receita = Receita;
+    }
+
+    public void getDespesas(float Despesas) {
+        this.Despesas = Despesas;
+    }
+
+    public float setSaldo() {
+        return Saldo;
+    }
+
+    public float setReceita() {
+        return Receita;
+    }
+
+    public float setDespesas() {
+        return Despesas;
+    }
+    
+}

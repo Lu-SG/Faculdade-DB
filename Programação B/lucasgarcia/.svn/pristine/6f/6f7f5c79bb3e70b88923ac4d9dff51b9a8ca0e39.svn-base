@@ -1,0 +1,45 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package PDV;
+
+/**
+ *
+ * @author LucasSilvaGarcia
+ */
+public class Compra extends Pessoas {
+
+    public Compra() {
+    }
+
+    private float ValorFinal;
+    private float ValorParcial;
+    private int OpcaoPagamento;
+
+    public float getValorFinal() {
+        return ValorFinal;
+    }
+
+    public float getValorParcial() {
+        return ValorParcial;
+    }
+
+    public int getOpcaoPagamento() {
+        return OpcaoPagamento;
+    }
+
+    public void setValorFinal(float ValorFinal) {
+        this.ValorFinal = ValorFinal;
+    }
+
+    public void setValorParcial(float ValorParcial) {
+        this.ValorParcial = ValorParcial;
+    }
+
+    public void setOpcaoPagamento(int OpcaoPagamento) {
+        this.OpcaoPagamento = OpcaoPagamento;
+    }
+
+}

@@ -1,0 +1,153 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package PDV;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author LucasSilvaGarcia
+ */
+public class Pessoas {
+
+    public Pessoas() {
+    }
+
+    public Pessoas(String Login, String Senha) {
+        if (Login.equals("Lucas") && Senha.equals("1234")) {
+            JOptionPane.showMessageDialog(null, "Login com Sucesso");
+        } else {
+            JOptionPane.showMessageDialog(null, "Login Falhou");
+        }
+    }
+     
+    private String Nome = "";
+    private String Cpf = "";
+    private String Rg = "";
+    private String Cep = "";
+    private String Endereco = "";
+    private String Data = "";
+    private String Email = "";
+    private String Celular = "";
+    private int Idade = 0;
+    private int TipoPessoa = 0;
+
+    public void Cadastrar(String Nome, String Cpf, String Rg, String Cep, String Endereco, String Data, String Email, String Celular, Integer Idade, Integer TipoPessoa) {
+        setNome(Nome);
+        setCpf(Cpf);
+        setRg(Rg);
+        setCep(Cep);
+        setEndereco(Endereco);
+        setData(Data);
+        setEmail(Email);
+        setCelular(Celular);
+        setIdade(Idade);
+        setTipoPessoa(TipoPessoa);
+    }
+
+    public void Ler() {
+        System.out.println(getNome());
+        System.out.println(getCpf());
+        System.out.println(getRg());
+        System.out.println(getCep());
+        System.out.println(getEndereco());
+        System.out.println(getData());
+        System.out.println(getEmail());
+        System.out.println(getCelular());
+        System.out.println(getIdade());
+        System.out.println(getTipoPessoa());
+
+    }
+
+    public void Atualizar(String Nome, String Cpf, String Rg, String Cep, String Endereco, String Data, String Email, String Celular, Integer Idade, Integer TipoPessoa) {
+
+    }
+
+    public void Deletar(String Nome, String Cpf, String Rg, String Cep, String Data, String Endereco, String Email, String Celular, Integer Idade, Integer TipoPessoa) {
+
+    }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public String getCpf() {
+        return Cpf;
+    }
+
+    public String getRg() {
+        return Rg;
+    }
+
+    public String getCep() {
+        return Cep;
+    }
+
+    public String getEndereco() {
+        return Endereco;
+    }
+
+    public String getData() {
+        return Data;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public String getCelular() {
+        return Celular;
+    }
+
+    public int getIdade() {
+        return Idade;
+    }
+
+    public int getTipoPessoa() {
+        return TipoPessoa;
+    }
+
+    public void setNome(String Nome) {
+        this.Nome = Nome;
+    }
+
+    public void setCpf(String Cpf) {
+        this.Cpf = Cpf;
+    }
+
+    public void setRg(String Rg) {
+        this.Rg = Rg;
+    }
+
+    public void setCep(String Cep) {
+        this.Cep = Cep;
+    }
+
+    public void setEndereco(String Endereco) {
+        this.Endereco = Endereco;
+    }
+
+    public void setData(String Data) {
+        this.Data = Data;
+    }
+
+    public void setEmail(String Email) {
+        this.Email = Email;
+    }
+
+    public void setCelular(String Celular) {
+        this.Celular = Celular;
+    }
+
+    public void setIdade(int Idade) {
+        this.Idade = Idade;
+    }
+
+    public void setTipoPessoa(int TipoPessoa) {
+        this.TipoPessoa = TipoPessoa;
+    }
+
+}

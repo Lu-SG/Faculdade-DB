@@ -1,0 +1,85 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package PDV;
+
+/**
+ *
+ * @author LucasSilvaGarcia
+ */
+public class Compra {
+
+    public Compra() {
+    }
+    int ValorFinal;
+    int OpcaoPagamento;
+    String NomePagador;
+    String NomeEmpresa;
+    int CpfPagador;
+    int CnpjEmpresa;
+    int CepPagador;
+    int CepEmpresa;
+
+    public void getValorFinal(Integer ValorFinal) {
+        this.ValorFinal = ValorFinal;
+    }
+
+    public void getOpcaoPagamento(Integer OpcaoPagamento) {
+        this.OpcaoPagamento = OpcaoPagamento;
+    }
+
+    public void getNomePagador(String NomePagador) {
+        this.NomePagador = NomePagador;
+    }
+
+    public void getNomeEmpresa(String NomeEmpresa) {
+        this.NomeEmpresa = NomeEmpresa;
+    }
+
+    public void getCpfPagador(Integer CpfPagador) {
+        this.CpfPagador = CpfPagador;
+    }
+
+    public void getCnpjEmpresa(Integer CnpjEmpresa) {
+        this.CnpjEmpresa = CnpjEmpresa;
+    }
+
+    public void getCepPagador(Integer CepPagador) {
+        this.CepPagador = CepPagador;
+    }
+
+    public void getCepEmpresa(Integer CepEmpresa) {
+        this.CepEmpresa = CepEmpresa;
+    }
+
+    public Integer setOpcaoPagamento() {
+        return OpcaoPagamento;
+    }
+
+    public String setNomePagador() {
+        return NomePagador;
+    }
+
+    public String setNomeEmpresa() {
+        return NomeEmpresa;
+    }
+
+    public Integer setCpfPagador() {
+        return CpfPagador;
+    }
+
+    public Integer setCnpjEmpresa() {
+        return CnpjEmpresa;
+    }
+
+    public Integer setCepPagador() {
+        return CepPagador;
+    }
+
+    public Integer setCepEmpresa() {
+        return CepEmpresa;
+    }
+
+}

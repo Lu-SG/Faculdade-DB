@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package PDV;
+
+/**
+ *
+ * @author LucasSilvaGarcia
+ */
+public class Pessoas {
+    
+    public Pessoas(){}
+    String Nome;
+    float Cpf;
+    float Rg;
+    String Cep;
+    int Idade = 20;
+    int TipoPessoa;
+    String Data;
+    String Email;
+    String Celular;
+    
+    public Pessoas(String nome){
+        System.out.println("Cadastrar Pessoa");
+    }
+    public Pessoas(int idade){
+        idade = idade + 10;
+        System.out.println("A idade é ="+idade);
+    }
+    public Pessoas(String login,String senha){
+        if(login.equalsIgnoreCase("lianderson") && senha.equalsIgnoreCase("123")){
+        System.out.println("Usuario Logado");
+        }
+    }
+    
+}

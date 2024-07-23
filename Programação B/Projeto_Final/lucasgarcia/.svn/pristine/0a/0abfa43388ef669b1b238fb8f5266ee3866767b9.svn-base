@@ -1,0 +1,66 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package PDV;
+
+/**
+ *
+ * @author LucasSilvaGarcia
+ */
+public class Financeiro extends Estoque {
+
+    public Financeiro() {
+    }
+
+    private float Saldo = 0f;
+    private float Receita = 0f;
+    private float Despesas = 0f;
+
+    public void Cadastrar(Float Saldo, Float Receita, Float Despesas) {
+        setDespesas(Saldo);
+        setReceita(Receita);
+        setDespesas(Despesas);
+
+    }
+
+    public void Ler() {
+        System.out.println(getSaldo());
+        System.out.println(getReceita());
+        System.out.println(getDespesas());
+    }
+
+    public void Atualizar(String Nome, String Cpf, String Rg, String Cep, String Data, String Email, String Celular, Integer Idade, Integer TipoPessoa) {
+
+    }
+
+    public void Deletar(String Nome, String Cpf, String Rg, String Cep, String Data, String Email, String Celular, Integer Idade, Integer TipoPessoa) {
+
+    }
+
+    public float getSaldo() {
+        return Saldo;
+    }
+
+    public float getReceita() {
+        return Receita;
+    }
+
+    public float getDespesas() {
+        return Despesas;
+    }
+
+    public void setSaldo(float Saldo) {
+        this.Saldo = Saldo;
+    }
+
+    public void setReceita(float Receita) {
+        this.Receita = Receita;
+    }
+
+    public void setDespesas(float Despesas) {
+        this.Despesas = Despesas;
+    }
+
+}

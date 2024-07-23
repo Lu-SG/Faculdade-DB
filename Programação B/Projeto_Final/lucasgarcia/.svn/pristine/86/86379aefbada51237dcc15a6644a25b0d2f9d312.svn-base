@@ -1,0 +1,104 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package PDV;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author LucasSilvaGarcia
+ */
+public class Pessoas {
+
+    public Pessoas() {
+    }
+    
+    private String Nome;
+    private String Cpf;
+    private String Rg;
+    private String Cep;
+    private String Data;
+    private String Email;
+    private String Celular;
+    private int Idade;
+    private int TipoPessoa;
+    
+
+    public void Cadastrar(String Nome, String Cpf,String Rg , String Cep, String Data, String Email, String Celular, Integer Idade, Integer TipoPessoa){
+        
+    }
+    public void getNome(String Nome) {
+        this.Nome = Nome;
+    }
+
+    public void getCpf(String Cpf) {
+        this.Cpf = Cpf;
+    }
+
+    public void getRg(String Rg) {
+        this.Rg = Rg;
+    }
+
+    public void getCep(String Cep) {
+        this.Cep = Cep;
+    }
+
+    public void getIdade(Integer Idade) {
+        this.Idade = Idade;
+    }
+
+    public void TipoPessoa(Integer TipoPessoa) {
+        this.TipoPessoa = TipoPessoa;
+    }
+
+    public void getData(String Data) {
+        this.Data = Data;
+    }
+
+    public void getEmail(String Email) {
+        this.Email = Email;
+    }
+
+    public void getCelular(String Celular) {
+        this.Celular = Celular;
+    }
+
+    public String setNome() {
+        return Nome;
+    }
+
+    public String setCpf() {
+        return Cpf;
+    }
+
+    public String setRg() {
+        return Rg;
+    }
+
+    public String setCep() {
+        return Cep;
+    }
+
+    public Integer setIdade() {
+        return Idade;
+    }
+
+    public Integer setTipoPessoa() {
+        return TipoPessoa;
+    }
+
+    public String setData() {
+        return Data;
+    }
+
+    public String setEmail() {
+        return Email;
+    }
+
+    public String setCelular() {
+        return Celular;
+    }
+}

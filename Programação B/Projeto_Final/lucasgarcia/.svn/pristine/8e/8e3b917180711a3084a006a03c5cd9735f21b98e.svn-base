@@ -1,0 +1,37 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package PDV;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author LucasSilvaGarcia
+ */
+public class App {
+
+    public static void main(String Args[]) {
+
+        String Login = JOptionPane.showInputDialog("Informe Login");
+        String Senha = JOptionPane.showInputDialog("Informe Senha");
+        
+        Pessoas p = new Pessoas(Login, Senha);
+        
+        String Nome = JOptionPane.showInputDialog(null, "Informe Nome");
+        String Cpf = JOptionPane.showInputDialog(null, "Informe Cpf");
+        String Rg = JOptionPane.showInputDialog(null, "Informe Rg");
+        String Cep = JOptionPane.showInputDialog(null, "Informe Cep");
+        String Data = JOptionPane.showInputDialog(null, "Informe Data");
+        String Email = JOptionPane.showInputDialog(null, "Informe Email");
+        String Celular = JOptionPane.showInputDialog(null, "Informe Celular");
+        Integer Idade = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe Idade"));
+        Integer TipoPessoa = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe Idade"));
+
+        p.Cadastrar(Nome, Cpf, Rg, Cep, Data, Email, Celular, Idade, TipoPessoa);
+        p.Ler();
+        
+    }
+}

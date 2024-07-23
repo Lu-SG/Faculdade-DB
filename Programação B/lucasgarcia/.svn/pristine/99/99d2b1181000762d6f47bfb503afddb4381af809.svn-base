@@ -1,0 +1,29 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package PDV;
+
+/**
+ *
+ * @author LucasSilvaGarcia
+ */
+public class Estoque {
+    public Estoque(){}
+    String Nome;
+    int Quantidade;    
+    
+    public void getNome(String Nome){
+        this.Nome = Nome;
+    }
+    
+    public void getQuantidade(int Quantidade){
+        this.Quantidade = Quantidade;
+    }
+    
+    public String setNome(){
+        return Nome;
+    }
+    
+}

@@ -1,0 +1,65 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package PDV;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author LucasSilvaGarcia
+ */
+public class Pessoas {
+    
+    public Pessoas(){}
+    String Nome;
+    float Cpf;
+    float Rg;
+    String Cep;
+    int Idade = 20;
+    int TipoPessoa;
+    String Data;
+    String Email;
+    String Celular;
+    
+    public Pessoas(String Nome){
+        System.out.println("Cadastrar Pessoa");
+    }
+    public Pessoas(int Idade){
+        Idade = Idade + 10;
+        System.out.println("A idade é ="+Idade);
+    }
+    public Pessoas(String Login,String Senha){
+        if(Login.equalsIgnoreCase("lianderson") && Senha.equalsIgnoreCase("123")){
+        System.out.println("Usuario Logado");
+        }
+    }
+    
+    public void Cadastrar(String Nome){
+        System.out.println("Cadastrado com Sucesso");
+    }
+    
+    public void Cadastrar(String Nome, String Sobrenome){
+        System.out.println(Nome+" "+Sobrenome);
+        System.out.println("Cadastrado com Sucesso");
+        JOptionPane.showMessageDialog(null,"Cadastrado com Sucesso");
+    }
+    
+    public void Cadastrar(String Nome, int Idade){
+        System.out.println("Cadastrado com Sucesso");
+        JOptionPane.showMessageDialog(null,"Seu Nome é: "+Nome);
+        JOptionPane.showMessageDialog(null,"Sua Idade é: "+Idade);
+        
+    }
+    
+    public void Cadastrar(String Nome, float Peso){
+        System.out.println("Cadastrado com Sucesso");
+    }
+    
+    
+    
+   
+    
+}
