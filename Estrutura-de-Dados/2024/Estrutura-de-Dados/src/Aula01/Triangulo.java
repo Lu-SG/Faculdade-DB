@@ -15,4 +15,6 @@ public class Triangulo {
         Area = (Base * Altura) / 2;
         return Area;
     }
+
+
 }
