@@ -14,7 +14,15 @@ public class Fila {
     private int tam;
     private int inicio;
     private int fim;
-
+    
+    public Fila(int tam){
+        this.tam = tam;
+        this.memo = new int[this.tam];
+        this.inicio = 0;
+        this.fim = 0;
+        
+    }
+    
     public void setMemo(int[] memo) {
         this.memo = memo;
     }
@@ -31,12 +39,20 @@ public class Fila {
         this.fim = fim;
     }
     
-    public Fila(int tam){
-        this.tam = tam;
-        this.memo = new int[this.tam];
-        this.inicio = 0;
-        this.fim = 0;
-        
+    public int[] getMemo() {
+        return memo;
+    }
+
+    public int getTam() {
+        return tam;
+    }
+
+    public int getInicio() {
+        return inicio;
+    }
+
+    public int getFim() {
+        return fim;
     }
     
     public void insere(int elemento){
@@ -62,21 +78,6 @@ public class Fila {
         return retorno;
     }
 
-    public int[] getMemo() {
-        return memo;
-    }
-
-    public int getTam() {
-        return tam;
-    }
-
-    public int getInicio() {
-        return inicio;
-    }
-
-    public int getFim() {
-        return fim;
-    }
     
     public boolean isFull(){
         if(this.fim == this.tam)

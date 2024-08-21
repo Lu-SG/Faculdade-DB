@@ -40,6 +40,10 @@ public class FilaCircular {
     public void setFim(int fim) {
         this.fim = fim;
     }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
     
     public int[] getMemo() {
         return memo;
@@ -55,6 +59,10 @@ public class FilaCircular {
 
     public int getFim() {
         return fim;
+    }
+
+    public int getTotal() {
+        return total;
     }
     
     public void insere(int elemento){
@@ -77,7 +85,7 @@ public class FilaCircular {
         int retorno = -1; 
         
         if(!this.isEmpty()){
-            this.inicio++;    
+            this.total--;    
             retorno = this.memo[this.inicio];
             
             if(this.inicio == this.tam -1){

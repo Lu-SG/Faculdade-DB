@@ -40,6 +40,7 @@ public class Main {
         System.out.println(fila.remove());
         System.out.println(fila.remove());
         */
+        /*
         int tam;
         System.out.println("Insira Tamanho Fila:");
         tam = scanner.nextInt();
@@ -51,6 +52,19 @@ public class Main {
         for (int i = 0; i <  fila.getTam(); i++) {
             System.out.println(fila.remove());
         }
+        */
+        FilaCircular filaC = new FilaCircular(4);
+        filaC.insere(1);
+        filaC.insere(2);
+        filaC.insere(3);
+        filaC.insere(4);
+        
+        System.out.println(filaC.remove());
+        System.out.println(filaC.remove());
+        System.out.println(filaC.remove());
+        System.out.println(filaC.remove());
+        
+               
         
     }
 }
