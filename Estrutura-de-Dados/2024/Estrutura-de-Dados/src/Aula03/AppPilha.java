@@ -21,9 +21,35 @@ public class AppPilha {
         */
 
         //EX01
-        
+        /*
+        1. Dada uma pilha alocada sobre um vetor [1..5], faça um algoritmo que leia 15 números e
+        proceda, para cada um deles, como segue:
+        - se o número for par, insira-o na pilha; se houver overflow, retire um elemento da pilha e
+        insira o número lido;
+        - se o número lido for ímpar, retire um número da pilha; se ocorrer underflow, imprima uma
+        mensagem.
+                Ao final, esvazie a pilha imprimindo os elementos.
+        */
 
-
+        Scanner scanner = new Scanner(System.in);
+        Pilha pilha = new Pilha(2);
+        for(int i = 0;i < pilha.getTam(); i++) {
+            System.out.println("Insira número:");
+            int num = scanner.nextInt();
+            if (num % 2 == 0) {
+                if(!pilha.isFull()){
+                    pilha.push(num);
+                }
+            } else {
+                pilha.pop();
+            }
+        }
+        for(int i = 0;i < pilha.getTam();i++){
+            System.out.println(i);
+            System.out.println(pilha.pop());
+        }
 
     }
+
+
 }

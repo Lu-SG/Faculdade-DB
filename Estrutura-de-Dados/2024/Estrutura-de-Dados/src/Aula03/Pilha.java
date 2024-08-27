@@ -46,6 +46,31 @@ public class Pilha {
             return false;
         }
     }
+
+    public int getTam() {
+        return tam;
+    }
+
+    public void setTam(int tam) {
+        this.tam = tam;
+    }
+
+    public int getTopo() {
+        return topo;
+    }
+
+    public void setTopo(int topo) {
+        this.topo = topo;
+    }
+
+    public int[] getMemo() {
+        return memo;
+    }
+
+    public void setMemo(int[] memo) {
+        this.memo = memo;
+    }
+
     public int top(){
         int retorno = -1;
         if(!this.isEmpty()){
