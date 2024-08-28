@@ -1,17 +1,17 @@
-package Aula03;
+package T1;
 
 public class Pilha {
     private int tam;
     private int topo;
-    private int memo[];
+    private String memo[];
 
     public Pilha(int tam){
         this.tam = tam;
-        this.memo = new int[tam];
+        this.memo = new String[tam];
         this.topo = -1;
     }
 
-    public void push(int elemento) {
+    public void push(String elemento) {
         if (!isFull()) {
             this.topo++;
             this.memo[this.topo] = elemento;
@@ -20,8 +20,8 @@ public class Pilha {
         }
     }
 
-    public int pop(){
-        int retorno = 0;
+    public String pop(){
+        String retorno = "";
 
         if(!this.isEmpty()){
             retorno = this.memo[this.topo];
@@ -32,8 +32,8 @@ public class Pilha {
         return retorno;
     }
 
-    public int top(){
-        int retorno = 0;
+    public String top(){
+        String retorno = "";
         if(!this.isEmpty()){
             retorno = this.memo[this.topo];
         } else {
@@ -72,14 +72,6 @@ public class Pilha {
 
     public void setTopo(int topo) {
         this.topo = topo;
-    }
-
-    public int[] getMemo() {
-        return memo;
-    }
-
-    public void setMemo(int[] memo) {
-        this.memo = memo;
     }
 
 
