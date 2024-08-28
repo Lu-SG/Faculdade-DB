@@ -21,7 +21,8 @@ public class Pilha {
     }
 
     public int pop(){
-        int retorno = -1;
+        int retorno = 0;
+
         if(!this.isEmpty()){
             retorno = this.memo[this.topo];
             this.topo--;
@@ -31,8 +32,18 @@ public class Pilha {
         return retorno;
     }
 
+    public int top(){
+        int retorno = 0;
+        if(!this.isEmpty()){
+            retorno = this.memo[this.topo];
+        } else {
+            System.out.println("Empty!");
+        }
+        return retorno;
+    }
+
     public boolean isFull(){
-        if (this.topo == this.tam - 1){
+        if (this.topo == (this.tam - 1)){
             return true;
         } else {
             return false;
@@ -71,13 +82,5 @@ public class Pilha {
         this.memo = memo;
     }
 
-    public int top(){
-        int retorno = -1;
-        if(!this.isEmpty()){
-            retorno = this.memo[this.topo];
-        } else {
-            System.out.println("Underflow!");
-        }
-        return retorno;
-    }
+
 }

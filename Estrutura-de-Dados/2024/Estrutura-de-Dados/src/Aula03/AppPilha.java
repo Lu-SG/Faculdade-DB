@@ -7,7 +7,7 @@ public class AppPilha {
         Scanner scanner = new Scanner(System.in);
         int tamanho = scanner.nextInt();
 
-        Pilha pilha = new Pilha(5);
+        Pilha pilha = new Pilha(tamanho);
 
         for(int i = 0; i < tamanho; i++){
             System.out.println("Insira Número:");
@@ -18,8 +18,8 @@ public class AppPilha {
         for(int i = 0; i < tamanho; i++){
             System.out.println(pilha.pop());
         }
-        */
 
+        */
         //EX01
         /*
         1. Dada uma pilha alocada sobre um vetor [1..5], faça um algoritmo que leia 15 números e
@@ -32,12 +32,15 @@ public class AppPilha {
         */
 
         Scanner scanner = new Scanner(System.in);
-        Pilha pilha = new Pilha(2);
+        Pilha pilha = new Pilha(15);
         for(int i = 0;i < pilha.getTam(); i++) {
             System.out.println("Insira número:");
             int num = scanner.nextInt();
             if (num % 2 == 0) {
                 if(!pilha.isFull()){
+                    pilha.push(num);
+                } else {
+                    pilha.pop();
                     pilha.push(num);
                 }
             } else {
@@ -45,9 +48,10 @@ public class AppPilha {
             }
         }
         for(int i = 0;i < pilha.getTam();i++){
-            System.out.println(i);
+            //System.out.println(i);
             System.out.println(pilha.pop());
         }
+
 
     }
 
