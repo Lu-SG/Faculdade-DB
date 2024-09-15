@@ -60,11 +60,9 @@ public class ListaSimples
     public Nodo removeFim ()
     {
         Nodo nodoAux    = this.prim;
+        Nodo nodoUltimo = this.prim;
         if (!this.isEmpty())
         {
-            Nodo nodoUltimo = this.prim;
-
-
             while (nodoUltimo.next != null)
             {
                 nodoAux = nodoUltimo;
@@ -130,5 +128,43 @@ public class ListaSimples
         }
     }
 
+    public Nodo remove (int pos) {
+        Nodo nodoRetorno = null;
 
+        if (this.isEmpty()) {
+            return nodoRetorno;
+        }
+
+        if (pos == 1)
+            nodoRetorno = removeInicio();
+        else {
+            int cont = 1;
+            Nodo nodoAux = this.prim;
+            while (nodoAux.next != null) {
+                cont++;
+                nodoAux = nodoAux.next;
+            }
+
+            if (pos >= cont)
+                nodoRetorno = removeFim();
+            else {
+                cont = 1;
+                nodoAux = prim;
+                Nodo nodoAnt = prim;
+                while (cont < pos) {
+                    cont++;
+                    nodoAnt = nodoAux;
+                    nodoAux = nodoAux.next;
+                }
+
+                nodoAnt.next = nodoAux.next;
+
+                nodoRetorno = nodoAux;
+            }
+
+
+        }
+
+        return nodoRetorno;
+    }
 }

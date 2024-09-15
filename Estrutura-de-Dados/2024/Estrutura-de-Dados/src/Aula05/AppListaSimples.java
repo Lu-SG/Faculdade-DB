@@ -9,7 +9,7 @@ public class AppListaSimples {
         listaSimples.insereInicio(4);
         listaSimples.insereInicio(5);
 
-        listaSimples.MostraLista();
+        listaSimples.mostraLista();
         listaSimples.removeInicio().mostraNodo();
         listaSimples.removeInicio().mostraNodo();
 
