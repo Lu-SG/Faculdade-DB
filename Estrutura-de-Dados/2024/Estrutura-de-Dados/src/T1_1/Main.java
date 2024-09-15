@@ -1,4 +1,4 @@
-package T1;
+package T1_1;
 import java.util.Scanner;
 
 /* FACULDADE DOM BOSCO DE PORTO ALEGRE

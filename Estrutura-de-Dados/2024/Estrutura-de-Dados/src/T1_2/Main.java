@@ -5,8 +5,9 @@ import java.util.Scanner;
  * SisInfo & ADS – Estrutura de Dados – Segundo T1
  *
  * Objetivo do Programa: Solucionar Problema T1_2
+ * Lista Inteiros Crescente --> Fila Pares Decrecentes e Fila Impares Decrescente
  * Componentes do grupo: Lucas Garcia
- * Data da entrega do arquivo fonte:
+ * Data da entrega do arquivo fonte: 15/09/2024
  */
 public class Main {
     public static void main(String[] args){
